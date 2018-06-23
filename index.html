@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-6">
                 <h1>
                     Guess who!
                 </h1>
@@ -27,10 +27,17 @@
                                     optionsCaption:'Select a game',
                                     value: selectedGame"></select>
             </div>
-
+            <div class="col-3" data-bind="if: yourImage">
+                <div class="your-image">
+                    <img class="img-fluid " data-bind="attr: {src: yourImage().src}" />
+                    <span data-bind="text: yourImage().title"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-12">
                 <div class="row" data-bind="foreach: images">
-                    <div class="col-2 image" >
+                    <div class="col-2 image">
                         <div data-bind="click: select, css: {'selected': selected}">
                             <img class="img-fluid" data-bind="attr: {src: src}" />
                             <span data-bind="text: title"></span>
