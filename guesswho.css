@@ -1,0 +1,13 @@
+.selected { 
+opacity: .4;
+}
+
+.image {
+    color: rgb(200, 200, 200);
+    background: rgb(40, 40, 40);
+    border: 2px;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 8px;
+
+}
