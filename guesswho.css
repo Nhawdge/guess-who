@@ -2,6 +2,15 @@
 opacity: .4;
 }
 
+.your-image {
+    color: rgb(220, 220, 220);
+    background: rgb(80, 80, 80);
+    border: 2px;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 8px;
+}
+
 .image {
     color: rgb(200, 200, 200);
     background: rgb(40, 40, 40);

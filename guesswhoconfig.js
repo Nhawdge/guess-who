@@ -12,6 +12,7 @@ var config = {
                 { src: "http://lorempizza.com/200/200?7", title: "Pizza 7" },
                 { src: "http://lorempizza.com/200/200?8", title: "Pizza 8" },
                 { src: "http://lorempizza.com/200/200?9", title: "Pizza 9" },
+                { src: "http://lorempizza.com/200/200?10", title: "Pizza 10" },
                 { src: "http://lorempizza.com/200/200?11", title: "Pizza 11" },
                 { src: "http://lorempizza.com/200/200?12", title: "Pizza 12" },
                 { src: "http://lorempizza.com/200/200?13", title: "Pizza 13" },
@@ -21,6 +22,7 @@ var config = {
                 { src: "http://lorempizza.com/200/200?17", title: "Pizza 17" },
                 { src: "http://lorempizza.com/200/200?18", title: "Pizza 18" },
                 { src: "http://lorempizza.com/200/200?19", title: "Pizza 19" },
+                { src: "http://lorempizza.com/200/200?20", title: "Pizza 20" },
             ],
         },
     ]
