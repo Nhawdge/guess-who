@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Guess who</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./guesswho.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.2.js"></script>
+    <script src="./guesswhoconfig.js"></script>
     <script src="./guesswho.js"></script>
 </head>
+
 <body>
-        
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    Guess who!
+                </h1>
+            </div>
+
+            <div class="col-12">
+                <div class="row" data-bind="foreach: Images">
+                    <div class="col-2 image" >
+                        <div data-bind="click: select, css: {'selected': selected}">
+                            <img class="img-fluid" data-bind="attr: {src: src}" />
+                            <span data-bind="text: title"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        ko.applyBindings(new GuessWhoViewModel());
+    </script>
 </body>
+
 </html>
