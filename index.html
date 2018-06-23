@@ -22,10 +22,14 @@
                 <h1>
                     Guess who!
                 </h1>
+                <select data-bind="options: config.games, 
+                                    optionsText: 'name', 
+                                    optionsCaption:'Select a game',
+                                    value: selectedGame"></select>
             </div>
 
             <div class="col-12">
-                <div class="row" data-bind="foreach: Images">
+                <div class="row" data-bind="foreach: images">
                     <div class="col-2 image" >
                         <div data-bind="click: select, css: {'selected': selected}">
                             <img class="img-fluid" data-bind="attr: {src: src}" />

@@ -1,12 +1,20 @@
 function GuessWhoViewModel() {
     var self = this;
 
-    self.Images = ko.observableArray();
+    self.games = ko.observableArray();
+    self.selectedGame = ko.observable();
+
+    self.images = ko.computed(function () {
+        if (self.selectedGame()) {
+            console.log(self.selectedGame())
+            return self.selectedGame().images.map(function (i) {
+                return new Image(i)
+            });
+        }
+    })
+
 
     self.onLoad = function () {
-        self.Images(config.images.map(function (i) {
-            return new Image(i)
-        }));
     }
 
     self.onLoad();
